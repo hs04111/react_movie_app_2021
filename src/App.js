@@ -1,4 +1,10 @@
-import NewComponent from './newComponent'
+const Food = ({fav}) => {
+    return <h3>I like {fav}</h3>
+}
+
+const Drink = (props) => {
+  return <h4>I also like {props.favDrink}</h4>
+}
 
 function App() {
   return (
@@ -7,7 +13,11 @@ function App() {
       Hello!
       
     </h2>
-    <NewComponent />
+    <Food fav="Kimchi"/>
+    <Food fav="Ramen"/>
+    <Food fav="Kimbob"/>
+    <Drink favDrink="Soju"/>
+    <Drink favDrink="Beer"/>
     </div>
   );
 }
