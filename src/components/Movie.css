@@ -48,3 +48,8 @@
     margin-right: 10px;
     font-size: 14px;
   }
+
+  .movies a{
+    display: contents;
+    text-decoration: none;
+    }
